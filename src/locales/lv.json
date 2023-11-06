@@ -1,0 +1,68 @@
+{
+  "promo": {
+    "pre-title": "Vai plāno pasākumu?",
+    "title": "LABS SERVISS",
+    "description": "piedāvā apkalpošanas personāla pakalpojumus visa Latvijā",
+    "start-btn": "SĀKT"
+  },
+  "navigation": {
+    "waiters": "VIESMĪĻI",
+    "bar-tenders": "BĀRMEŅI",
+    "cooks": "PAVĀRI",
+    "hostesses": "HOSTESS",
+    "dishwashers": "TRAUKU MAZGĀTĀJI"
+  },
+  "professions": {
+    "waiters": {
+      "title": "VIESMĪĻI",
+      "text": "Mūsu komandā strādā vairāk nekā 30 profesionālie viesmīļi ar ilggadējo pieredzi apkalpošanas jomā. Izcilas latviešu, angļu un krievu valodas zināšanas.",
+      "list": {
+        "1": "kāzas un banketi;",
+        "2": "furšeti un kafijas pauzes;",
+        "3": "restorānu un viesnīcu serviss."
+      }
+    },
+    "bartenders": {
+      "title": "BĀRMEŅI",
+      "text": "Mēs piedāvājam bārmeņu pakalpojumus, kā arī unikālas kokteiļu kartes izstrādi pasākumam. Mūsu bārmeņi sarīkos īstu šovu, kas patiks visiem viesiem.",
+      "list": {
+        "1": "kāzas un banketi;",
+        "2": "furšeti un kafijas pauzes;",
+        "3": "restorānu un viesnīcu serviss."
+      }
+    },
+    "cooks": {
+      "title": "PAVĀRI",
+      "text": "Mūsu pavāri ne tikai pagatavos gardus ēdienus, bet arī izstrādās ēdienkarti priekš pasākumam. Īpaša ēdienu servēšana un neaizmirstama garša.",
+      "list": {
+        "1": "kāzas un banketi;",
+        "2": "furšeti un kafijas pauzes;",
+        "3": "restorānu un viesnīcu serviss."
+      }
+    },
+    "hostesses": {
+      "title": "HOSTESS",
+      "text": "Viesu sagaidīšana ir viens no svarīgākājiem servisa soliem. Mēs piedāvājam draudzīgu un viesmīlīgu hostess pakalpojumus. Izcilas latviešu, angļu un krievu valodas zināšanas. "
+    },
+    "dishwashers": {
+      "title": "TRAUKU MAZGĀTĀJI",
+      "text": "Kārtība virtuvē ir nepieciešama, tāpēc mēs piedāvājam profesionālu trauku mazgātāju pakalpojumus. Mūsu darbinieki ne tikai nomazgās traukus, bet arī palīdzēs uzkopt telpu."
+    },
+    "description": "Mūsu darbinieki strādā visā Latvijā. Ir iespējamas arī nakts maiņas."
+  },
+  "contact-btn": "KONTAKTI",
+  "order-btn": "PASŪTĪT",
+  "request-form": {
+    "titles": {
+      "order": "PASŪTĪT MŪSU PAKALPOJUMUS",
+      "contacts": "KONTAKT-INFORMĀCIJA"
+    },
+    "input-placeholders": {
+      "event": "PASĀKUMA VEIDS",
+      "date-and-time": "DATUMS UN LAIKS",
+      "guest-number": "VIESU SKAITS",
+      "staff-needed": "KĀDS PERSONĀLS IR VAJADZĪGS",
+      "your-contacts": "JŪSU KONTAKTI"
+    }
+  }
+}
