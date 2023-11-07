@@ -15,6 +15,16 @@
       class="form__item"
     >
       <input
+        v-if="field.name === 'date-and-time'"
+        v-model="field.value"
+        class="form__item-input date"
+        :name="field.name"
+        :type="field.type"
+        :placeholder="$t(`${field.placeholder}`)"
+        readonly
+      />
+      <input
+        v-else
         v-model="field.value"
         class="form__item-input"
         :name="field.name"
@@ -33,7 +43,6 @@
 
 <script>
 import MainBtn from "@/components/MainBtn.vue";
-
 export default {
   components: {
     MainBtn
@@ -81,16 +90,15 @@ export default {
   },
   methods: {
     async handleSubmit() {
-      const formData = this.formFields.map((field) => `${this.$t(field.placeholder)}: ${field.value}`).join('\n');
-
-      const encoder = new TextEncoder();
+      const formData = this.formFields.map((field) => 
+      `${this.$t(field.placeholder)}: ${field.value}`).join('$');
 
       await fetch('index.php', {
         method: 'POST',
         headers: {
-          'Content-Type': 'text/plain; charset=utf-8"',
+          'Content-Type': 'text/html',
         },
-        body: encoder.encode(formData),
+        body: formData,
       })
           .then((response) => response)
           .then((data) => {
@@ -123,6 +131,9 @@ export default {
     margin: 0 0 20px 0;
     position: relative;
     width: 100%;
+    .date {
+      cursor: pointer;
+    }
     &-input {
       padding: 0 30px;
       width: 80%;
