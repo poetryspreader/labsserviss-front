@@ -12,7 +12,6 @@
           {{ $t('promo.description') }}
         </div>
        <main-btn :title="'promo.start-btn'" :to="'/navigation'"/>
-       <v-date-picker></v-date-picker>
         <!-- <div class="coming-soon">
           <font-awesome-icon
               class="coming-soon__icon"

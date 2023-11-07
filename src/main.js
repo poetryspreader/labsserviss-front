@@ -44,6 +44,7 @@ import App from './App.vue'
 import router from './router'
 import { createI18n } from 'vue-i18n';
 import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
 
 // languages
 import ruMessages from './locales/ru.json';
@@ -59,7 +60,7 @@ const i18n = createI18n({
 });
 
 const vuetify = createVuetify({
-    components: ['vDatePicker']
+    components
 });
 
 createApp(App)

@@ -38,14 +38,16 @@
       />
     </div>
     <main-btn :width="'80%'" :title="'order-btn'" />
+    <v-date-picker class="form__date-picker"></v-date-picker>
   </form>
 </template>
 
 <script>
 import MainBtn from "@/components/MainBtn.vue";
+import { VDatePicker } from 'vuetify/labs/VDatePicker'
 export default {
   components: {
-    MainBtn
+    MainBtn, VDatePicker
   },
   data() {
     return {
@@ -120,6 +122,7 @@ export default {
 </script>
 <style lang="scss">
 .form {
+  position: relative;
   margin: 50px 0 0 0;
   font-size: 30px;
   text-align: center;
@@ -165,6 +168,14 @@ export default {
       width: 30px;
       height: 30px;
     }
+  }
+  &__date-picker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    scale: 0.9;
+    opacity: 0.9;
   }
 }
 @media (max-width: 420px) {
