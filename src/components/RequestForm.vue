@@ -305,6 +305,7 @@ export default {
       font-size: 10px;
       &::placeholder {
         font-size: 14px;
+        color: white;
       }
     }
     &-icon {
@@ -313,6 +314,11 @@ export default {
   }
   .v-input--horizontal {
     width: 80%;
+  }
+  .v-field--center-affix .v-label.v-field-label {
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 1;
   }
 }
 
