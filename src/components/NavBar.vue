@@ -99,7 +99,7 @@ export default {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 930px) {
   .nav-bar {
     margin: 0;
     flex-direction: column;

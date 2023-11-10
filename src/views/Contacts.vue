@@ -47,16 +47,19 @@ export default {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 150px);
   .info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin: 50px 0 0 0;
-    width: 57%;
+    justify-content: space-around;
+    padding: 0 0 0 50px;
+    width: 55%;
     border-left: 2px solid rgba(255, 255, 255, 0.8);
     text-align: center;
+    height: 100%;
     &__title {
       font-size: 30px;
     }
@@ -83,15 +86,17 @@ export default {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 930px) {
   .contacts {
     flex-direction: column;
+    justify-content: flex-start;
+    margin: 50px 0 0 0;
     .info {
       border-top: 2px solid rgba(255, 255, 255, 0.4);
       width: 100%;
       border-left: none;
       padding: 20px 0;
-      margin: 40px 0 0 0;
+      margin: 50px 0 0 0;
       &__title {
         font-size: 20px;
       }
@@ -104,6 +109,14 @@ export default {
         margin: 0;
         font-size: 17px;
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .info {
+    &__contacts {
+      flex-direction: column;
     }
   }
 }

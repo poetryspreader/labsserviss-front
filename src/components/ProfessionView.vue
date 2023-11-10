@@ -83,7 +83,7 @@ export default {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 930px) {
   .profession {
     padding: 0 0 30px 0;
     &__content {
@@ -95,9 +95,9 @@ export default {
       }
       img {
         object-fit: cover;
-        width: 100%;
-        height: 100%;
-        margin: 15px 0 30px 0;
+        width: 60%;
+        height: 60%;
+        margin: 45px auto;
       }
     }
   }
