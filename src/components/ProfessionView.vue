@@ -115,7 +115,7 @@ export default {
 
 @media (max-width: 1300px) {
   .profession {
-    padding: 0 30px;
+    padding: 0 30px 40px;
   }
 }
 </style>
