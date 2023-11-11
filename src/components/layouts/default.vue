@@ -42,7 +42,7 @@ export default {
   height: 70px; /* Измените размер на нужный */
 }
 
-@media (max-width: 420px) {
+@media (max-width: 1470px) {
   .header {
     padding: 0 20px;
   }

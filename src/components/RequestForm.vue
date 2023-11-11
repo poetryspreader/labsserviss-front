@@ -15,7 +15,6 @@
           :key="index"
           class="form__item"
       >
-
         <input
             v-if="field.name === 'date-and-time'"
             class="form__item-input date"
@@ -48,7 +47,7 @@
         />
       </div>
     </div>
-    <main-btn :width="'80%'" :title="'order-btn'" />
+    <main-btn :width="'250px'" :title="'order-btn'" />
     <v-date-picker
       v-if="showDatePicker"
       v-model="date"
@@ -157,7 +156,6 @@ export default {
       this.formFields[1].value = newDate[0].toLocaleDateString("en-GB");
     },
     updateStaffOptionsValue() {
-      console.log(this.selectedStaff)
       this.formFields[3].value = this.selectedStaff.join(', ')
     }
   },
@@ -204,6 +202,7 @@ export default {
         font-size: 18px;
         font-weight: 700;
         opacity: 1;
+        font-family: 'Montserrat', sans-serif;
       }
       &:focus {
         outline: none;
@@ -254,17 +253,26 @@ export default {
   }
 }
 
-// v-select
-.v-select .v-field .v-field__input > input, .v-text-field .v-input__details, .v-field--variant-filled .v-field__overlay {
-  display: none;
+// staff v-select
+.v-field--center-affix .v-label.v-field-label {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 1;
+  font-size: 18px;
+  margin-inline-start: 0;
 }
 
 .v-input--horizontal {
+  padding: 0 30px;
   width: 70%;
   margin: 0 auto;
   border: 2px solid white;
   opacity: 0.3;
   border-radius: 35px;
+}
+
+.v-select .v-field .v-field__input > input, .v-text-field .v-input__details, .v-field--variant-filled .v-field__overlay {
+  display: none;
 }
 
 .v-field--variant-filled .v-field__outline::before, .v-field--variant-underlined .v-field__outline::before,
@@ -312,20 +320,22 @@ export default {
       right: 15%;
     }
   }
+  .main-btn {
+    width: 80%;
+  }
   .v-input--horizontal {
     width: 80%;
+    padding: 0 13px;
   }
   .v-field--center-affix .v-label.v-field-label {
     font-size: 14px;
-    font-weight: 700;
-    opacity: 1;
   }
 }
 
 @media (min-width: 650px) {
   .form {
     margin: 0;
-    width: 60%;
+    width: 80%;
   }
   .form__item {
     &-input {
@@ -339,10 +349,10 @@ export default {
     width: 85%;
   }
 }
-
-@media (min-width: 1060px) {
+@media (min-width: 975px) {
   .form__title {
-    max-width: 300px;
+    max-width: 265px;
+    text-align: center;
   }
 }
 

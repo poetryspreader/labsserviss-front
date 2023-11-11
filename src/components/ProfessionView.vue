@@ -29,14 +29,16 @@
       <main-btn :title="'contact-btn'" :to="'/contacts'" />
     </div>
   </default-layout>
+  <RouterView />
 </template>
 <script>
 import DefaultLayout from "@/components/layouts/default.vue";
 import NavBar from "@/components/NavBar.vue";
 import MainBtn from "@/components/MainBtn.vue";
+import { RouterView } from 'vue-router'
 export default {
   components: {
-    DefaultLayout, MainBtn, NavBar
+    DefaultLayout, MainBtn, NavBar, RouterView
   },
   props: {
     profession: String

@@ -55,7 +55,6 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 0 0 0 50px;
     width: 55%;
     border-left: 2px solid rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -113,10 +112,40 @@ export default {
   }
 }
 
-@media (max-width: 1200px) {
-  .info {
-    &__contacts {
-      flex-direction: column;
+@media (min-width: 930px) {
+  .contacts {
+    .info {
+      width: 75%;
+      &__contacts {
+        padding: 12px 22px;
+        flex-direction: column;
+      }
+      &__email {
+        margin: 0;
+      }
+    }
+  }
+}
+@media (min-width: 1150px) {
+  .contacts {
+    .info {
+      &__contacts {
+        padding: 12px 50px;
+      }
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .contacts {
+    .info {
+      width: 80%;
+      padding: 0 0 0 40px;
+      &__contacts {
+        flex-direction: row;
+      }
+      &__email {
+        margin: 0 0 0 40px;
+      }
     }
   }
 }

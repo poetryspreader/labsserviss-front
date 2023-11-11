@@ -21,7 +21,7 @@
 .main-btn {
   cursor: pointer;
   display: inline-block;
-  padding: 12px 70px;
+  padding: 12px 60px;
   font-size: 20px;
   font-weight: 700;
   border: 2px solid var(--main-color-white);
