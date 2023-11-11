@@ -301,6 +301,10 @@ export default {
   background-color: transparent;
 }
 
+.v-field__append-inner > .v-icon {
+  display: none;
+}
+
 @media (max-width: 650px) {
   .form {
     margin: 0;
@@ -349,6 +353,7 @@ export default {
     width: 85%;
   }
 }
+
 @media (min-width: 975px) {
   .form__title {
     max-width: 265px;

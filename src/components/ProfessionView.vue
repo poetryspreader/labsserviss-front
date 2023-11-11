@@ -3,7 +3,7 @@
     <div class="profession">
       <nav-bar />
       <div class="profession__content">
-        <div>
+        <div class="profession__content-wrapper">
           <div class="profession__content-title">
             {{ $t(`professions.${profession}.title`) }}
           </div>
@@ -84,13 +84,21 @@ export default {
     }
   }
 }
+@media only screen and (min-width: 850px) and (max-width: 1000px) {
+  .profession {
+    &__content {
+      &-wrapper {
+        margin: 0 0 0 50px;
+      }
+    }
+  }
+}
 
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
   .profession {
     padding: 0 0 30px 0;
     &__content {
       flex-direction: column;
-      padding: 0 20px;
       margin: 0;
       &-title {
         margin: 0;
@@ -102,6 +110,12 @@ export default {
         margin: 45px auto;
       }
     }
+  }
+}
+
+@media (max-width: 1300px) {
+  .profession {
+    padding: 0 30px;
   }
 }
 </style>
