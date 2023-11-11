@@ -96,4 +96,27 @@ export default {
     }
   }
 }
+
+@media only screen and (min-width: 420px) and (max-width: 670px) {
+  .promo {
+    &__pre-title {
+      font-size: 27px;
+    }
+
+    &__title {
+      font-size: 45px;
+    }
+
+    &__description {
+      font-size: 20px;
+      padding: 0 20px;
+    }
+
+    &__content {
+      a {
+        margin: 60px 0 0 0;
+      }
+    }
+  }
+}
 </style>
