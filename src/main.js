@@ -1,7 +1,5 @@
 import './assets/main.scss'
-// import 'vuetify/dist/vuetify.min.css'
-// import '@mdi/font/css/materialdesignicons.css'
-// import 'vuetify/styles'
+
 // icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'

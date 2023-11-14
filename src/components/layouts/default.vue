@@ -7,24 +7,12 @@
     <slot></slot>
   </div>
 </template>
-<style lang="scss">
-  .default {
-    display: flex;
-    flex-direction: column;
-  }
-</style>
 <script>
 import BowTie from "@/components/icons/BowTie.vue";
 import HeaderNav from "@/components/HeaderNav.vue";
 export default {
   components: {
     BowTie, HeaderNav
-  },
-  data() {
-    return {
-      socialItems: [
-      ]
-    }
   }
 }
 </script>
